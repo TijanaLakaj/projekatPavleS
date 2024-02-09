@@ -25,6 +25,7 @@ ol,
 ul,
 h1,
 h2,
+h4,
 p {
     padding: 0;
     margin: 0;
@@ -127,6 +128,9 @@ header h2 {
 .info {
     color: var(--dark-gray-color);
     padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info h2 {
@@ -173,8 +177,9 @@ p.hometext {
 }
 
 .slika-skole-div {
-    display: flex;
-    justify-content: end;
+    height: 250px;
+    width: 280px;
+    margin-bottom: 10px;
 
 
     /* background-color: var(--dark-blue); */
@@ -191,8 +196,9 @@ p.hometext {
 }
 
 .slika-skole {
-    object-fit: fill;
-    height: 200px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 
     /* position: relative;
     height: 270px;
@@ -271,8 +277,10 @@ p.hometext {
 
 .contact-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 
