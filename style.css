@@ -1,0 +1,283 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+
+:root {
+    --blue-color: #00bfff;
+    --light-blue: #006fff;
+    --dark-blue: #004770;
+    --light-white: #f0f0f0;
+    --light-gray-color: #d4d4d4;
+    --medium-gray-color: #414141;
+    --dark-gray-color: #222222;
+    --green-color: #98d198;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    color: var(--light-white);
+}
+
+ol,
+ul,
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'DM Serif Display', serif;
+}
+
+
+/* HEADER */
+
+/* .floating-header {
+    display: none;
+    background-color: var(--dark-gray-color);
+    margin: 0;
+    height: 77px;
+    max-width: 100%;
+    padding: 20px 150px 20px 150px;
+} */
+
+header {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+    background-color: var(--dark-gray-color);
+    /* width: 320px; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.dropdown::before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+}
+
+.dropdown-list {
+    display: none;
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+header h2 {
+    font-size: 18px;
+}
+
+/* .header-list {
+    display: flex;
+    list-style: none;
+} */
+/* .list-item {
+    padding: 10px;
+    margin: 0 5px;
+} */
+/* .contact {
+    background-color: var(--light-gray-color);
+    color: var(--dark-gray-color);
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+} */
+
+
+
+/* HOME */
+
+/* .home {
+    background-color: var(--light-gray-color);
+    color: var(--dark-gray-color);
+    padding: 20px 20px;
+} */
+
+.light {
+    background-color: var(--light-white);
+}
+
+.dark {
+    background-color: var(--light-gray-color);
+}
+
+.contact-us.info {
+    background-color: var(--dark-gray-color);
+    color: var(--light-gray-color);
+}
+
+.info {
+    color: var(--dark-gray-color);
+    padding: 20px 20px;
+}
+
+.info h2 {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* justify-content: space-between; */
+}
+
+h1.hometext {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2.hometext {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h4.hometext {
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p.hometext {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.banner-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slika-skole-div {
+    display: flex;
+    justify-content: end;
+
+
+    /* background-color: var(--dark-blue); */
+    /* border: 5px solid var(--light-white); */
+
+    /* width: 280px;
+    height: 320px;
+    border-radius: 230px 230px 0 0; */
+
+    /* width: 380px;
+    height: 470px;
+    border-radius: 230px 230px 0 0; */
+
+}
+
+.slika-skole {
+    object-fit: fill;
+    height: 200px;
+
+    /* position: relative;
+    height: 270px;
+    bottom: -40px; */
+
+    /* height: 330px;
+    bottom: -130px;
+    right: 0px; */
+}
+
+.visit-now {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px 0;
+    /* margin-top: 120px; */
+
+    /* margin-left: 50px; */
+}
+
+.visit-dugme {
+    background-color: var(--dark-blue);
+    color: var(--light-white);
+    border: var(--dark-blue);
+    font-weight: bold;
+
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+}
+
+
+.logoimages {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 50px; */
+}
+
+.logo1>img,
+.logo2>img {
+    height: 35px;
+    object-fit: fill;
+}
+
+.logo3>img {
+    height: 25px;
+    object-fit: fill;
+}
+
+.slika-skole>img {
+    object-fit: cover;
+}
+
+
+
+.slika-senzor-div {
+    height: 250px;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.slika-senzor {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: left;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 1600px) {
+    .tab {
+        max-width: 1420px;
+    }
+}
