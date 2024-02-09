@@ -40,77 +40,106 @@ h4 {
 
 /* HEADER */
 
-/* .floating-header {
-    display: none;
-    background-color: var(--dark-gray-color);
-    margin: 0;
-    height: 77px;
-    max-width: 100%;
-    padding: 20px 150px 20px 150px;
-} */
 
 header {
     /* position: fixed; */
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0 20px;
     font-size: 16px;
     background-color: var(--dark-gray-color);
-    /* width: 320px; */
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
     padding: 10px 0;
-    gap: 180px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-button.dropdown::before {
-    content: "\f0c9";
-    font-family: FontAwesome;
-}
-
-.dropdown-list {
-    display: none;
-    text-align: right;
-    padding-right: 30px;
-    padding-bottom: 10px;
 }
 
 header h2 {
     font-size: 18px;
 }
 
-/* .header-list {
-    display: flex;
+
+
+label.dropdown-reveal::before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+}
+
+label.dropdown-reveal:hover {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~.dropdown-list {
+    display: block;
+}
+
+
+.dropdown-list {
+    background-color: var(--dark-gray-color);
     list-style: none;
-} */
-/* .list-item {
-    padding: 10px;
-    margin: 0 5px;
-} */
-/* .contact {
-    background-color: var(--light-gray-color);
-    color: var(--dark-gray-color);
+}
+
+.dropdown-list a {
+    color: var(--light-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-list a:hover {
+    color: var(--blue-color);
+}
+
+.visit-now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.visit-dugme {
+    background-color: var(--dark-blue);
+    color: var(--light-white);
+    border: var(--dark-blue);
     font-weight: bold;
-    border-radius: 10px;
+
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 25px;
     letter-spacing: 2px;
-    padding: 10px 15px;
-} */
+    padding: 5px 15px;
+}
 
+.return-to-top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 40px;
+    width: 40px;
 
+    display: flex;
+    justify-content: end;
+}
+
+.return-to-top a::before {
+    content: "\f151";
+    font-family: FontAwesome;
+    color: var(--dark-blue);
+    font-size: 35px;
+}
 
 /* HOME */
 
-/* .home {
-    background-color: var(--light-gray-color);
-    color: var(--dark-gray-color);
-    padding: 20px 20px;
-} */
 
 .light {
     background-color: var(--light-white);
@@ -120,18 +149,29 @@ header h2 {
     background-color: var(--light-gray-color);
 }
 
-.contact-us.info {
-    background-color: var(--dark-gray-color);
-    color: var(--light-gray-color);
-}
-
+.home,
 .info {
     color: var(--dark-gray-color);
-    padding: 20px 20px;
+    padding: 20px;
+}
+
+.info .content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.contact-us {
+    background-color: var(--dark-gray-color);
+    color: var(--light-gray-color);
+    padding: 20px;
+}
+
+.about-us {
+    color: var(--dark-gray-color);
+    padding: 20px;
+}
+
 
 .info h2 {
     font-size: 28px;
@@ -165,6 +205,11 @@ h4.hometext {
     letter-spacing: 1px;
 }
 
+.about-us h4 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
 p.hometext {
     font-size: 16px;
     text-align: justify;
@@ -180,59 +225,14 @@ p.hometext {
     height: 250px;
     width: 280px;
     margin-bottom: 10px;
-
-
-    /* background-color: var(--dark-blue); */
-    /* border: 5px solid var(--light-white); */
-
-    /* width: 280px;
-    height: 320px;
-    border-radius: 230px 230px 0 0; */
-
-    /* width: 380px;
-    height: 470px;
-    border-radius: 230px 230px 0 0; */
-
 }
 
 .slika-skole {
     object-fit: cover;
     height: 100%;
     width: 100%;
-
-    /* position: relative;
-    height: 270px;
-    bottom: -40px; */
-
-    /* height: 330px;
-    bottom: -130px;
-    right: 0px; */
 }
 
-.visit-now {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 20px 0;
-    /* margin-top: 120px; */
-
-    /* margin-left: 50px; */
-}
-
-.visit-dugme {
-    background-color: var(--dark-blue);
-    color: var(--light-white);
-    border: var(--dark-blue);
-    font-weight: bold;
-
-    width: 170px;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 25px;
-    letter-spacing: 2px;
-    padding: 5px 15px;
-}
 
 
 .logoimages {
@@ -275,17 +275,77 @@ p.hometext {
 }
 
 
-.contact-info {
+.contact-us .banner-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    margin: 20px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
+@media screen and (max-width: 425px) {
 
-@media screen and (min-width: 1600px) {
-    .tab {
-        max-width: 1420px;
+    .dropdown-list {
+        display: none;
+        position: absolute;
+        text-align: right;
+        top: 50px;
+        right: 0%;
+        width: 100%;
+        padding: 0 20px 10px 20px;
     }
 }
+
+@media screen and (min-width: 426px) {
+
+    label,
+    input {
+        display: none;
+    }
+
+    header {
+        padding: 0 60px;
+    }
+
+    .dropdown-list {
+        display: inline-flex;
+    }
+
+    li {
+        padding: 0 10px;
+    }
+
+    .contact-button {
+        background-color: var(--light-gray-color);
+        border-radius: 25px;
+    }
+
+    .dropdown-list a {
+        color: var(--dark-blue);
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .home,
+    .info,
+    .about-us,
+    .contact-us {
+        padding: 30px 60px;
+    }
+
+
+}
+
+@media screen and (min-width: 1600px) {}

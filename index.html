@@ -17,119 +17,126 @@
 </head>
 
 <body>
-    <header> <!-- header -->
+    <header id="beggining"> <!-- header -->
         <div class="header">
             <h2>Pavle S</h2>
-            <button class="dropdown" type="button"></button>
+            <!-- <button class="dropdown" type="button"></button> -->
+            <label for="ccc" class="dropdown-reveal"></label>
+            <input id="ccc" type="checkbox">
+
+            <ul class="dropdown-list">
+                <li><a href="#home-tab">Početna</a></li>
+                <li><a href="#info-tab">O projektu</a></li>
+                <li><a href="#about-us-tab">O nama</a></li>
+                <li class="contact-button"><a href="#contact-us-tab">Kontakt</a></li>
+            </ul>
         </div>
-        <ul class="dropdown-list">
-            <li>Pocetna</li>
-            <li>O projektu</li>
-            <li>O nama</li>
-            <li>Kontakt</li>
-        </ul>
     </header>
 
-    <section class="info dark"> <!-- home -->
-        <div class="banner-content">
-            <h1 class="hometext">PROJEKAT PAVLE S</h1>
-            <p class="hometext">Projekat škole PavleS predstavlja revolucionarnu inicijativu koja spaja tehnologiju i
-                obrazovanje, stvarajući inteligentne zgrade koje optimizuju resurse i pružaju korisne informacije. Ova
-                inovativna saradnja između TeamCAD-a i Tehničke škole Pavle Savić postavlja nove standarde u
-                efikasnosti, udobnosti i održivosti u obrazovanju i poslovnom svetu.</p>
-        </div>
-
-        <div class="banner-photo">
-            <div class="slika-skole-div">
-                <img class="slika-skole" src="./images/Skola1-cp.png" alt="projekat skole">
+    <section id="home-tab" class="home info dark"> <!-- home -->
+        <div class="content">
+            <div class="banner-content">
+                <h1 class="hometext">PROJEKAT PAVLE S</h1>
+                <p class="hometext">Projekat škole PavleS predstavlja revolucionarnu inicijativu koja spaja tehnologiju
+                    i obrazovanje, stvarajući inteligentne zgrade koje optimizuju resurse i pružaju korisne informacije.
+                    Ova inovativna saradnja između TeamCAD-a i Tehničke škole Pavle Savić postavlja nove standarde u
+                    efikasnosti, udobnosti i održivosti u obrazovanju i poslovnom svetu.</p>
             </div>
-        </div>
 
-        <div class="visit-now">
-            <button type="button" class="visit-dugme">VISIT NOW</button>
-        </div>
+            <div class="banner-photo">
+                <div class="slika-skole-div">
+                    <img class="slika-skole" src="./images/Skola1-cp.png" alt="projekat skole">
+                </div>
+            </div>
 
-        <div class="logoimages">
-            <div class="logo1">
-                <img src="./images/skolalogo_black.png" alt="skola pavle savic logo" />
+            <div class="visit-now">
+                <button type="button" class="visit-dugme">VISIT NOW</button>
             </div>
-            <div class="logo2">
-                <img src="./images/LOGO_TeamCAD_logo.png" alt="team cad logo">
-            </div>
-            <div class="logo3">
-                <img src="./images/aps-logo--black.png" alt="autodesk platfor services logo">
+
+            <div class="logoimages">
+                <div class="logo1">
+                    <img src="./images/skolalogo_black.png" alt="skola pavle savic logo" />
+                </div>
+                <div class="logo2">
+                    <img src="./images/LOGO_TeamCAD_logo.png" alt="team cad logo">
+                </div>
+                <div class="logo3">
+                    <img src="./images/aps-logo--black.png" alt="autodesk platfor services logo">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="info light"> <!-- odrzavanje prostorije - senzor -->
-        <div class="slika-senzor-div">
-            <img class="slika-senzor" src="./images/Skola1.png" alt="">
-        </div>
+    <section id="info-tab" class="reverse info light"> <!-- odrzavanje prostorije - senzor -->
+        <div class="content">
+            <div class="slika-senzor-div">
+                <img class="slika-senzor" src="./images/Skola1.png" alt="">
+            </div>
 
-        <div class="banner-content">
-            <h2 class="hometext">Održavanje prostorije</h2>
-            <h4 class="hometext">Saznajte koje su prostorije najčešće korišćene</h4>
-            <p class="hometext">Modul namenjen analizi upotrebe prostorija, u cilju optimizacije resursa potrebnih za
-                njihovo čišćenje.
-                Oslanja se na informacije iz 3D BIM modela i senzora prisutnosti. Na osnovu dobijenih podataka moguće je
-                videti koje prostorije su korišćene i koliko, njihove površine kao i ukupna površina korišćenih
-                prostorija.</p>
-            <p class="hometext">Na ovaj način se može planirati spremanje samo prostorija koje su bile u upotrebi.</p>
-        </div>
+            <div class="banner-content">
+                <h2 class="hometext">Održavanje prostorije</h2>
+                <h4 class="hometext">Saznajte koje su prostorije najčešće korišćene</h4>
+                <p class="hometext">Modul namenjen analizi upotrebe prostorija, u cilju optimizacije resursa potrebnih
+                    za njihovo čišćenje. Oslanja se na informacije iz 3D BIM modela i senzora prisutnosti. Na osnovu
+                    dobijenih podataka moguće je videti koje prostorije su korišćene i koliko, njihove površine kao i
+                    ukupna površina korišćenih prostorija.</p>
+                <p class="hometext">Na ovaj način se može planirati spremanje samo prostorija koje su bile u upotrebi.
+                </p>
+            </div>
 
-        <div class="visit-now">
-            <button type="button" class="visit-dugme">VISIT NOW</button>
+            <div class="visit-now">
+                <button type="button" class="visit-dugme">VISIT NOW</button>
+            </div>
         </div>
     </section>
 
     <section class="info dark"> <!-- senzor temperature -->
-        <div class="slika-senzor-div">
-            <img class="slika-senzor" src="./images/Skola1.png" alt="">
-        </div>
+        <div class="content">
+            <div class="slika-senzor-div">
+                <img class="slika-senzor" src="./images/Skola1.png" alt="">
+            </div>
 
-        <div class="banner-content">
-            <h2 class="hometext">Senzor temperature</h2>
-            <h4 class="hometext">Imajte uvid u trenutne temperature prostorija</h4>
-            <p class="hometext">Modul namenjen obradi informacija dobijenih od senzora koji mere temperaturu u
-                prostoriji kako bi se
-                omogućilo precizno upravljanje klimatizacijom. Na osnovu dobijenih podataka moguće je održavati
-                optimalnu temperaturu za udobnost i efikasnost.</p>
-            <p class="hometext">Pored toga, senzor temperature može detektovati ekstremne promene temperature koje mogu
-                ukazivati na
-                potencijalne probleme u sistemu grejanja ili hlađenja</p>
-        </div>
+            <div class="banner-content">
+                <h2 class="hometext">Senzor temperature</h2>
+                <h4 class="hometext">Imajte uvid u trenutne temperature prostorija</h4>
+                <p class="hometext">Modul namenjen obradi informacija dobijenih od senzora koji mere temperaturu u
+                    prostoriji kako bi se omogućilo precizno upravljanje klimatizacijom. Na osnovu dobijenih podataka
+                    moguće je održavati optimalnu temperaturu za udobnost i efikasnost.</p>
+                <p class="hometext">Pored toga, senzor temperature može detektovati ekstremne promene temperature koje
+                    mogu ukazivati na potencijalne probleme u sistemu grejanja ili hlađenja</p>
+            </div>
 
-        <div class="visit-now">
-            <button type="button" class="visit-dugme">VISIT NOW</button>
-        </div>
-    </section>
-
-    <section class="info light"> <!-- vlaznost vazduha -->
-        <div class="slika-senzor-div">
-            <img class="slika-senzor" src="./images/Skola1.png" alt="">
-        </div>
-
-        <div class="banner-content">
-            <h2 class="hometext">Vlažnost vazduha</h2>
-            <h4 class="hometext">Saznajte u kojim je prostorijama boravak najprijatniji</h4>
-            <p class="hometext">Modul namenjen analizi podataka o vlažnosti vazduha u prostoriji kako bi se osiguralo da
-                vazduh bude
-                prijatan za boravak ljudi. Na osnovu dobijenih podataka moguće je održavati optimalnu vlažnost vazduha
-                za zdraviju i udobniju atmosferu.</p>
-            <p class="hometext">Na ovaj način senzor vlažnosti vazduha može upozoriti na previsoku ili prenisku vlažnost
-                koja može
-                uticati na zdravlje i komfor.</p>
-        </div>
-
-        <div class="visit-now">
-            <button type="button" class="visit-dugme">VISIT NOW</button>
+            <div class="visit-now">
+                <button type="button" class="visit-dugme">VISIT NOW</button>
+            </div>
         </div>
     </section>
 
-    <section class="about-us info dark">
+    <section class="reverse info light"> <!-- vlaznost vazduha -->
+        <div class="content">
+            <div class="slika-senzor-div">
+                <img class="slika-senzor" src="./images/Skola1.png" alt="">
+            </div>
+
+            <div class="banner-content">
+                <h2 class="hometext">Vlažnost vazduha</h2>
+                <h4 class="hometext">Saznajte u kojim je prostorijama boravak najprijatniji</h4>
+                <p class="hometext">Modul namenjen analizi podataka o vlažnosti vazduha u prostoriji kako bi se
+                    osiguralo da vazduh bude prijatan za boravak ljudi. Na osnovu dobijenih podataka moguće je održavati
+                    optimalnu vlažnost vazduha za zdraviju i udobniju atmosferu.</p>
+                <p class="hometext">Na ovaj način senzor vlažnosti vazduha može upozoriti na previsoku ili prenisku
+                    vlažnost koja može uticati na zdravlje i komfor.</p>
+            </div>
+
+            <div class="visit-now">
+                <button type="button" class="visit-dugme">VISIT NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us-tab" class="about-us dark">
         <div class="banner-content">
-            <h2>Malo više o nama</h2>
+            <h2 class="hometext">Malo više o nama</h2>
             <div>
                 <h4 class="hometext">O školi</h4>
                 <p class="hometext">Tehnička škola "Pavle Savić" u Novom Sadu osnovana je 25. jula 1961. godine kao
@@ -160,28 +167,34 @@
         </div>
     </section>
 
-    <section class="contact-us info dark">
-        <div class="banner-content">
-            <h1 class="hometext">Zakažite sastanak već danas.</h1>
+    <section id="contact-us-tab" class="contact-us dark">
+        <div class="content">
+            <h1 class="hometext">Poručite svoj projekat već danas.</h1>
 
-            <div class="contact-info">
-                <h4 class="hometext">Telefon</h4>
-                <p class="hometext">+381 11 301 5043</p>
+            <div class="banner-content">
+                <div class="contact-info">
+                    <h4 class="hometext">Telefon</h4>
+                    <p class="hometext">+381 11 301 5043</p>
+                </div>
+
+                <div class="contact-info">
+                    <h4 class="hometext">Email</h4>
+                    <p class="hometext"><a href="mailto:services@teamcad.rs">services@teamcad.rs</a></p>
+                </div>
+
+                <div class="contact-info">
+                    <h4 class="hometext">Website</h4>
+                    <p class="hometext"><a target="_blank" href="https://www.bim-dt.com/">bim-dt.com</a></p>
+                    <p class="hometext"><a target="_blank" href="https://teamcad.rs/">teamcad.rs</a></p>
+                </div>
+
             </div>
-
-            <div class="contact-info">
-                <h4 class="hometext">Email</h4>
-                <p class="hometext"><a href="mailto:services@teamcad.rs">services@teamcad.rs</a></p>
-            </div>
-
-            <div class="contact-info">
-                <h4 class="hometext">Website</h4>
-                <p class="hometext"><a href="https://www.bim-dt.com/">bim-dt.com</a></p>
-                <p class="hometext"><a href="https://teamcad.rs/">teamcad.rs</a></p>
-            </div>
-
         </div>
     </section>
+
+    <div class="return-to-top">
+        <a href="#beggining"></a>
+    </div>
 </body>
 
 </html>
