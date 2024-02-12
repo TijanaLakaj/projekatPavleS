@@ -60,7 +60,7 @@ header {
 }
 
 header h2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -184,7 +184,6 @@ input[type=checkbox]:checked~.dropdown-list {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    /* justify-content: space-between; */
 }
 
 h1.hometext {
@@ -222,15 +221,16 @@ p.hometext {
 }
 
 .slika-skole-div {
-    height: 250px;
-    width: 280px;
+    height: auto;
+    width: auto;
     margin-bottom: 10px;
 }
 
 .slika-skole {
     object-fit: cover;
-    height: 100%;
+    height: auto;
     width: 100%;
+    object-position: left;
 }
 
 
@@ -241,7 +241,6 @@ p.hometext {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* margin-top: 50px; */
 }
 
 .logo1>img,
@@ -260,18 +259,32 @@ p.hometext {
 }
 
 
-
 .slika-senzor-div {
-    height: 250px;
-    width: 280px;
+    position: relative;
+    height: auto;
+    width: auto;
     margin-bottom: 10px;
 }
 
-.slika-senzor {
+.slika-projekat {
     object-fit: cover;
-    height: 100%;
+    height: auto;
     width: 100%;
     object-position: left;
+    border-radius: 50px;
+}
+
+.slika-senzor {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+
+    max-height: 150px;
+    /* height: auto; */
+    max-width: 150px;
+    /* width: auto; */
+
+    object-fit: cover;
 }
 
 
@@ -328,12 +341,17 @@ p.hometext {
         border-radius: 25px;
     }
 
-    .dropdown-list a {
+    #contact-button {
         color: var(--dark-blue);
         font-weight: bold;
         letter-spacing: 1px;
+    }
+
+    .dropdown-list a {
         padding: 5px;
     }
+
+
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -344,8 +362,92 @@ p.hometext {
     .contact-us {
         padding: 30px 60px;
     }
-
-
 }
 
-@media screen and (min-width: 1600px) {}
+
+@media screen and (min-width: 769px) {
+
+    .home,
+    .info,
+    .about-us,
+    .contact-us {
+        padding: 40px 60px;
+        min-height: 550px;
+    }
+
+    .home .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 80px 80px;
+        gap: 10px 40px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner-photo {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .logoimages {
+        grid-column: 1 / 3;
+    }
+
+    .home .banner-content {
+        align-items: start;
+    }
+
+    h1.hometext {
+        font-size: 46px;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+
+    p.hometext {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .logoimages {
+        height: 80px;
+        gap: 20px;
+    }
+
+    .logo1>img,
+    .logo2>img {
+        height: 50px;
+    }
+
+    .logo3>img {
+        height: 45px;
+    }
+
+    .info .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+
+    .info .banner-content .hometext {
+        text-align: right;
+    }
+
+    .info .banner-content {
+        align-items: end;
+    }
+
+    .info h2 {
+        font-size: 32px;
+    }
+
+    .info h4 {
+        font-size: 24px;
+    }
+
+    .visit-now {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
