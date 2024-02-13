@@ -122,7 +122,7 @@ input[type=checkbox]:checked~.dropdown-list {
 
 .return-to-top {
     position: fixed;
-    bottom: 5%;
+    bottom: 30px;
     right: 3%;
     height: 40px;
     width: 40px;
@@ -184,6 +184,7 @@ input[type=checkbox]:checked~.dropdown-list {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    padding-bottom: 15px;
 }
 
 h1.hometext {
@@ -218,12 +219,13 @@ p.hometext {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .slika-skole-div {
     height: auto;
     width: auto;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .slika-skole {
@@ -280,6 +282,9 @@ p.hometext {
 }
 
 
+hr {
+    display: none;
+}
 
 .contact-us .banner-content {
     display: flex;
@@ -307,6 +312,11 @@ p.hometext {
         right: 0%;
         width: 100%;
         padding: 0 20px 10px 20px;
+    }
+
+    .slika-senzor-div,
+    .slika-projekat {
+        height: 300px;
     }
 }
 
@@ -344,7 +354,9 @@ p.hometext {
         padding: 5px;
     }
 
-
+    .banner-content {
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -355,6 +367,7 @@ p.hometext {
     .contact-us {
         padding: 30px 60px;
     }
+
 }
 
 
@@ -365,7 +378,6 @@ p.hometext {
     .about-us,
     .contact-us {
         padding: 60px;
-        /* min-height: 550px; */
     }
 
     .home .content {
@@ -373,9 +385,6 @@ p.hometext {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 80px 50px;
         gap: 20px 40px;
-
-        /* margin-left: auto;
-        margin-right: auto; */
     }
 
     .banner-photo {
@@ -434,7 +443,7 @@ p.hometext {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 500px;
-        gap: 20px;
+        gap: 40px;
     }
 
     .info.reverse .slika-senzor-div {
@@ -458,23 +467,59 @@ p.hometext {
 
     .slika-senzor-div {
         margin: 0;
-        /* height: ; */
     }
 
     .info .banner-content {
         align-items: end;
     }
 
-    .info h2 {
+    h2.hometext {
         font-size: 32px;
     }
 
-    .info h4 {
+    h4.hometext {
         font-size: 24px;
     }
 
     .visit-now {
         margin-left: auto;
         margin-right: auto;
+    }
+
+
+
+    .about-us h4 {
+        padding: 5px 0;
+    }
+
+    hr {
+        display: block;
+        width: 90%;
+        border: 0;
+        height: 2px;
+        background: linear-gradient(to right, #d4d4d4, #004770, #d4d4d4);
+    }
+
+    .contact-us .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us h1.hometext {
+        max-width: 500px;
+    }
+
+    .contact-us .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 30px;
+        margin-top: 0;
+    }
+
+    .contact-us .contact-info {
+        align-items: end;
+        gap: 5px;
     }
 }
