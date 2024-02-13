@@ -276,6 +276,7 @@ p.hometext {
 
 .slika-projekat:hover {
     filter: blur(4px);
+    cursor: zoom-in;
 }
 
 
