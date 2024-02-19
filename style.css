@@ -544,9 +544,13 @@ hr.light-background {
 
     .info .content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: .8fr 1fr;
         grid-template-rows: 500px;
         gap: 40px;
+    }
+
+    .info.reverse .content {
+        grid-template-columns: 1fr .8fr;
     }
 
     .info.reverse .slika-senzor-div {
