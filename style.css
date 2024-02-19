@@ -81,7 +81,8 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked~.dropdown-list {
-    display: block;
+    display: inline;
+    justify-content: space-around;
 }
 
 
@@ -350,7 +351,7 @@ hr.light-background {
     background: linear-gradient(to right, #d4d4d4, #004770, #d4d4d4);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
 
     .dropdown-list {
         display: none;
@@ -359,7 +360,7 @@ hr.light-background {
         top: 50px;
         right: 0%;
         width: 100%;
-        padding: 0 20px 10px 20px;
+        padding: 0 30px 10px 20px;
     }
 
     .slika-senzor-div,
@@ -380,7 +381,7 @@ hr.light-background {
 
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 481px) {
 
     label,
     input {
@@ -448,7 +449,7 @@ hr.light-background {
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
     .home {
         padding: 80px 60px 30px 60px;
