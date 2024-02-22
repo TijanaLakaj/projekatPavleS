@@ -29,6 +29,7 @@
                     <li><a href="#home-tab">Početna</a></li>
                     <!-- <li><a href="#info-tab">Funkcionalnosti</a></li> -->
                     <li><a href="#info-tab">O projektu</a></li>
+                    <li><a href="#galerija">Galerija</a></li>
                     <li><a href="#about-us-tab">O nama</a></li>
                     <li class="contact-button"><a id="contact-button" href="#contact-us-tab">Kontakt</a></li>
                 </ul>
@@ -51,7 +52,7 @@
 
                 <div class="banner-photo">
                     <div class="slika-skole-div">
-                        <img class="slika-skole" src="./images/Skola-render2.png" alt="projekat skole">
+                        <img class="slika-skole" src="./images/Skola_Exterior_3.png" alt="projekat skole">
                     </div>
                 </div>
 
@@ -158,7 +159,55 @@
         </div>
     </section>
 
-    <section id="about-us-tab" class="about-us dark">
+    <!-- galerija slika -->
+    <section id="galerija" class="galerija dark">
+        <div class="container-lg">
+            <div class="content">
+                <h2 class="hometext">GALERIJA</h2>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">1 / 6</div>
+                        <img class="slide-image" src="./images/Senzor-Temp-Tabla2.png" alt="">
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">2 / 6</div>
+                        <img class="slide-image" src="./images/Senzor-Temp-Tabla3.png" alt="">
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">3 / 6</div>
+                        <img class="slide-image" src="./images/Hodnik-kancelarije.png" alt="">
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">4 / 6</div>
+                        <img class="slide-image" src="./images/Door-Sensor_Prozori2.png" alt="">
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">5 / 6</div>
+                        <img class="slide-image" src="./images/Door-Sensor_Prozori-Hodnik.png" alt="">
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">6 / 6</div>
+                        <img class="slide-image" src="./images/Motion-Sensor-4.png" alt="">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us-tab" class="about-us light">
         <div class="container-lg">
             <div class="banner-content">
                 <h2 class="hometext">Malo više o nama</h2>
