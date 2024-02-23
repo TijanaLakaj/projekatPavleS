@@ -29,8 +29,10 @@ function full_view(ele) {
     let src = ele.parentElement.querySelector(".img-source").getAttribute("src");
     document.querySelector("#img-viewer").querySelector("img").setAttribute("src", src);
     document.querySelector("#img-viewer").style.display = "block";
+    document.body.style.overflow = 'hidden';
 }
 
 function close_model() {
     document.querySelector("#img-viewer").style.display = "none";
+    document.body.style.overflow = 'visible';
 }
