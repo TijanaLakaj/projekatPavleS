@@ -155,7 +155,6 @@ input[type=checkbox]:checked~.dropdown-list {
 
 .visit-dugme:hover span {
     padding-right: 20px;
-
 }
 
 .visit-dugme:hover span::after {
@@ -164,11 +163,6 @@ input[type=checkbox]:checked~.dropdown-list {
 }
 
 
-.languageSelect {
-    cursor: pointer;
-    display: flex;
-    gap: 15px;
-}
 
 
 
