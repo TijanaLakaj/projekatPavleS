@@ -37,6 +37,14 @@ h4 {
     font-family: 'DM Serif Display', serif;
 }
 
+/*.srp {
+     display: none; 
+}*/
+
+/*.eng {
+     display: none; 
+}*/
+
 
 /* HEADER */
 
@@ -156,24 +164,13 @@ input[type=checkbox]:checked~.dropdown-list {
 }
 
 
-
-.return-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 3%;
-    height: 40px;
-    width: 40px;
-
+.languageSelect {
+    cursor: pointer;
     display: flex;
-    justify-content: end;
+    gap: 15px;
 }
 
-.return-to-top a::before {
-    content: "\f151";
-    font-family: FontAwesome;
-    color: var(--light-blue);
-    font-size: 35px;
-}
+
 
 /* HOME */
 
@@ -266,7 +263,6 @@ p.hometext {
 .slika-skole-div {
     height: auto;
     width: auto;
-    /* margin-bottom: 10px; */
 }
 
 .slika-skole {
@@ -303,7 +299,6 @@ p.hometext {
 
 
 .slika-senzor-div {
-    /* position: relative; */
     height: 500px;
     width: auto;
     margin-bottom: 10px;
@@ -313,7 +308,6 @@ p.hometext {
     object-fit: cover;
     height: 500px;
     width: 100%;
-    /* object-position: 70% center; */
     border-radius: 30px;
 }
 
@@ -412,6 +406,8 @@ hr.dark-background {
 hr.light-background {
     background: linear-gradient(to right, #d4d4d4, #004770, #d4d4d4);
 }
+
+
 
 /* SLIDESHOW */
 
