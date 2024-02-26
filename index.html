@@ -23,17 +23,15 @@
             <div class="header">
                 <h2>Pavle S</h2>
 
-                <!-- <div class="languageSelect">
-                    <p><span class="fi fi-rs eng" onclick="changeLanguage(this)"></span></p>
-                    <p><span class="fi fi-gb srp"></span></p>
-                </div> -->
+                <!-- <p class="language-select"><span class="fi fi-rs eng" onclick="changeLanguage(this)"></span></p> -->
+
+                <p class="language-select"><span class="fi fi-gb srp"></span></p>
 
                 <label for="lista" class="dropdown-reveal"></label>
                 <input id="lista" type="checkbox">
 
                 <ul class="dropdown-list">
                     <li class="srp"><a href="#home-tab">Početna</a></li>
-                    <!-- <li class="eng"><a href="#home-tab">Home</a></li> -->
                     <li><a href="#info-tab">O projektu</a></li>
                     <li><a href="#galerija">Galerija</a></li>
                     <li><a href="#about-us-tab">O nama</a></li>
@@ -48,12 +46,15 @@
             <div class="content">
                 <div class="banner-content">
                     <h1 class="hometext">PROJEKAT PAVLE S</h1>
-                    <p class="hometext">Projekat škole PavleS predstavlja revolucionarnu inicijativu koja spaja
-                        tehnologiju
-                        i obrazovanje, stvarajući inteligentne zgrade koje optimizuju resurse i pružaju korisne
-                        informacije.
-                        Ova inovativna saradnja između TeamCAD-a i Tehničke škole Pavle Savić postavlja nove standarde u
-                        efikasnosti, udobnosti i održivosti u obrazovanju i poslovnom svetu.</p>
+                    <p class="hometext">Projekat PavleS predstavlja inovativnu inicijativu kompanije TeamCAD, ostvarenu
+                        u partnerstvu sa Tehničkom školom Pavle Savić iz Novog Sada, stvarajući inteligentne zgrade
+                        koje optimizuju resurse i pružaju korisne informacije.
+                        Ovaj revolucionarni projekat postavlja nove standarde u efikasnosti, udobnosti i održivosti u
+                        obrazovanju i poslovnom svetu.</p>
+                    <p class="hometext">Glavni cilj projekta je demonstracija koncepta pametne zgrade, koju karakteriše
+                        sinergija između BIM (Building Information Modeling) informacija i različitih senzora. Ovakav
+                        pristup omogućava stvaranje inteligentnih objekata koji pružaju obilje korisnih informacija,
+                        kombinujući podatke dobijene od senzora sa BIM podacima.</p>
                 </div>
 
                 <div class="banner-photo">
@@ -167,9 +168,38 @@
         </div>
     </section>
 
+    <!-- odrzavanje prostorija -->
+    <section id="info-reverse" class="reverse info dark">
+        <div class="container-lg">
+            <div class="content">
+                <div class="slika-senzor-div">
+                    <img class="slika-projekat img-source" onclick="full_view(this)" src="./images/tempgif.gif" alt="">
+                </div>
+
+                <div class="banner-content">
+                    <h2 class="hometext">Prilagođene informacije o prostorijama</h2>
+                    <h4 class="hometext">Imajte detaljni uvid u stanje svake prostorije</h4>
+                    <p class="hometext">Ova funkcionalnost omogućava lak pristup detaljnim informacijama o podovima
+                        prostorija direktno iz samog 3D modela. Prilikom selekcije željenih prostorija, aplikacija pruža
+                        informacije o vrsti podne obloge, datumu postavljanja, kao i istoriji održavanja, uključujući
+                        poslednje hoblovanje parketa ili zamenu podova. Na ovaj način dobijate brzo i jednostavno sve
+                        potrebne informacije o podovima, što olakšava planiranje održavanja i upravljanje prostorijama.
+                    </p>
+                    <p class="hometext">Pomoću ove funkcionalnosti se može precizno planirati održavanje podova i
+                        pravovremeno reagovati na potrebe za renoviranjem ili popravkom, što rezultira produženim vekom
+                        trajanja podnih obloga i smanjenim troškovima održavanja.</p>
+
+                    <div class="visit-now">
+                        <button type="button" class="visit-dugme"><span>KA PROJEKTU </span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- galerija slika -->
-    <section id="galerija" class="galerija dark">
+    <section id="galerija" class="galerija light">
         <div class="container-lg">
             <div class="content">
                 <h2 class="hometext">GALERIJA</h2>
@@ -178,26 +208,32 @@
                     <div class="mySlides fade-anim">
                         <div class="numbertext">1 / 6</div>
                         <img class="slide-image" src="./images/Senzor-Temp-Tabla2.png" alt="">
+                        <div class="caption">Senzor temperature i vlažnosti vazduha u učionici</div>
                     </div>
                     <div class="mySlides fade-anim">
                         <div class="numbertext">2 / 6</div>
                         <img class="slide-image" src="./images/Senzor-Temp-Tabla3.png" alt="">
+                        <div class="caption">Senzor temperature i vlažnosti vazduha u učionici</div>
                     </div>
                     <div class="mySlides fade-anim">
                         <div class="numbertext">3 / 6</div>
-                        <img class="slide-image" src="./images/Hodnik-kancelarije.png" alt="">
+                        <img class="slide-image" src="./images/Hodnik_kancelarije.png" alt="">
+                        <div class="caption">Senzor temperature i vlažnosti vazduha u hodniku</div>
                     </div>
                     <div class="mySlides fade-anim">
                         <div class="numbertext">4 / 6</div>
                         <img class="slide-image" src="./images/Door-Sensor_Prozori2.png" alt="">
+                        <div class="caption">Senzor za prozore i vrata</div>
                     </div>
                     <div class="mySlides fade-anim">
                         <div class="numbertext">5 / 6</div>
                         <img class="slide-image" src="./images/Door-Sensor_Prozori-Hodnik.png" alt="">
+                        <div class="caption">Senzor za prozore i vrata</div>
                     </div>
                     <div class="mySlides fade-anim">
                         <div class="numbertext">6 / 6</div>
                         <img class="slide-image" src="./images/Motion-Sensor-4.png" alt="">
+                        <div class="caption">Senzor pokreta u učionici</div>
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -216,7 +252,7 @@
         </div>
     </section>
 
-    <section id="about-us-tab" class="about-us light">
+    <section id="about-us-tab" class="about-us dark">
         <div class="container-lg">
             <div class="banner-content">
                 <h2 class="hometext">Malo više o nama</h2>
