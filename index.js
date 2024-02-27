@@ -1,3 +1,5 @@
+
+// GALERY SLIDE
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,6 +27,8 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+
+// FULL SCREEN IMAGE PREVIEW
 function full_view(ele) {
     let src = ele.parentElement.querySelector(".img-source").getAttribute("src");
     document.querySelector("#img-viewer").querySelector("img").setAttribute("src", src);
@@ -36,3 +40,16 @@ function close_model() {
     document.querySelector("#img-viewer").style.display = "none";
     document.body.style.overflow = 'visible';
 }
+
+
+// DROPDOWN LIST CLOSE
+document.addEventListener('DOMContentLoaded', function () {
+    // const dropdown = document.querySelector('.dropdown-list');
+    const links = document.querySelectorAll('.dropdown-list a');
+    links.forEach(function (link) {
+        link.addEventListener('click', function () {
+            const checkbox = document.querySelector('#lista');
+            checkbox.checked = false;
+        });
+    });
+});
