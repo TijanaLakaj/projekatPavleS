@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-RS">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PavleS project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+    <header id="beggining"> <!-- header -->
+        <div class="container-lg">
+            <div class="header">
+                <h2>Pavle S</h2>
+
+                <p class="language-select"><span class="fi fi-rs eng"
+                        onclick="window.location.href = 'https://www.google.com';"></span></p>
+
+                <!-- <p class="language-select"><span class="fi fi-gb srp"
+                    onclick="window.location.href = 'https://www.google.com';"></span></p> -->
+
+                <label for="lista" class="dropdown-reveal"></label>
+                <input id="lista" type="checkbox">
+
+                <ul class="dropdown-list">
+                    <li class="srp"><a href="#home-tab">Home</a></li>
+                    <li><a href="#info-tab">About project</a></li>
+                    <li><a href="#galerija">Gallery</a></li>
+                    <li><a href="#about-us-tab">About us</a></li>
+                    <li class="contact-button"><a id="contact-button" href="#contact-us-tab">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="home-tab" class="home dark"> <!-- home -->
+        <div class="container-lg">
+            <div class="content">
+                <div class="banner-content">
+                    <h1 class="hometext">PROJECT PAVLE S</h1>
+                    <p class="hometext">The PavleS project represents an innovative initiative by TeamCAD, realized in
+                        partnership with the Technical School Pavle Savić from Novi Sad, creating smart buildings that
+                        optimize resources and provide useful information. This revolutionary project sets new standards
+                        in efficiency, comfort, and sustainability in both the education and business sectors.</p>
+                    <p class="hometext">The main goal of the project is to demonstrate the concept of a smart building,
+                        characterized by the synergy between Building Information Modeling (BIM) data and various
+                        sensors. This approach enables the creation of intelligent objects that provide a wealth of
+                        useful information, combining data obtained from sensors with BIM data.</p>
+                </div>
+
+                <div class="banner-photo">
+                    <div class="slika-skole-div">
+                        <img class="slika-skole" src="./images/Skola_Exterior_3.png" alt="render of a school model">
+                    </div>
+                </div>
+
+                <div class="visit-now">
+                    <button type="button" class="visit-dugme"><span>VISIT NOW</span></button>
+                </div>
+
+                <div class="logoimages">
+                    <div class="logo1">
+                        <img src="./images/skolalogo_black.png" alt="school pavle savic logo" />
+                    </div>
+                    <div class="logo2">
+                        <img src="./images/LOGO_TeamCAD_logo.png" alt="team cad logo">
+                    </div>
+                    <div class="logo3">
+                        <img src="./images/aps-logo--black.png" alt="autodesk platform services logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- odrzavanje prostorije - senzor -->
+    <section id="info-tab" class="info light">
+        <div class="container-lg">
+            <div class="content">
+                <div class="slika-senzor-div">
+                    <img class="slika-projekat img-source" onclick="full_view(this)" src="./images/upotrebagif.gif"
+                        alt="Short video presentation of the room maintenance module">
+                </div>
+
+                <div class="banner-content">
+                    <h2 class="hometext">Room maintenance</h2>
+                    <h4 class="hometext">Find out which rooms are most frequently used</h4>
+                    <p class="hometext">Module designed for analyzing room usage to optimize resources needed for
+                        cleaning. It relies on information from 3D BIM models and presence sensors. Based on the data
+                        obtained, it is possible to see which rooms have been used and how much, their surfaces, and the
+                        total surface area of the rooms used.</p>
+                    <p class="hometext">This way, cleaning can be planned only for the rooms that have been used.</p>
+
+                    <div class="visit-now">
+                        <button type="button" class="visit-dugme"><span>VISIT NOW</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- senzor temperature -->
+    <section id="info-reverse" class="reverse info dark">
+        <div class="container-lg">
+            <div class="content">
+                <div class="slika-senzor-div">
+                    <img class="slika-projekat img-source" onclick="full_view(this)" src="./images/tempgif.gif"
+                        alt="Short video presentation of the room temperature and humidity module">
+                </div>
+
+                <div class="banner-content">
+                    <h2 class="hometext">Temperature and air humidity</h2>
+                    <h4 class="hometext">Discover which rooms offer the most pleasant stay</h4>
+                    <p class="hometext">Modules designed to process information from sensors measuring temperature and
+                        air humidity in the room. This allows for precise air conditioning management and maintenance of
+                        optimal conditions for comfort and efficiency.</p>
+                    <p class="hometext">Additionally, the sensors can detect extreme changes in temperature and
+                        humidity, indicating potential issues in the heating or cooling system, as well as unhealthy
+                        conditions for occupants.</p>
+
+                    <div class="visit-now">
+                        <button type="button" class="visit-dugme"><span>VISIT NOW</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- zauzetost prostorije -->
+    <section class="info light">
+        <div class="container-lg">
+            <div class="content">
+                <div class="slika-senzor-div">
+                    <img class="slika-projekat img-source" onclick="full_view(this)" src="./images/zauzetostgif.gif"
+                        alt="Short video presentation of the room occupancy module">
+                </div>
+
+                <div class="banner-content">
+                    <h2 class="hometext">Room occupancy</h2>
+                    <h4 class="hometext">Efficiently manage rooms with presence sensors</h4>
+                    <p class="hometext">The room occupancy sensor module enables efficient optimization of room cleaning
+                        processes. It provides real-time information on room occupancy, allowing for cleaning schedules
+                        to be adjusted according to actual room usage. This avoids unnecessary cleaning of unused rooms,
+                        resulting in time and resource savings and reduced maintenance costs.</p>
+                    <p class="hometext">Additionally, information on occupancy in the last 10 minutes allows for dynamic
+                        cleaning planning, contributing to efficiency and optimal use of resources for maintaining space
+                        hygiene.</p>
+
+                    <div class="visit-now">
+                        <button type="button" class="visit-dugme"><span>VISIT NOW</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- odrzavanje podova -->
+    <section id="info-reverse" class="reverse info dark">
+        <div class="container-lg">
+            <div class="content">
+                <div class="slika-senzor-div">
+                    <img class="slika-projekat img-source" onclick="full_view(this)"
+                        src="./images/odrzavanjepodovagif.gif"
+                        alt="Short video presentation of the floor planning module for rooms">
+                </div>
+
+                <div class="banner-content">
+                    <h2 class="hometext">Custom room information</h2>
+                    <h4 class="hometext">Gain detailed insights into each room's condition</h4>
+                    <p class="hometext">This functionality provides easy access to detailed information about room
+                        floors directly from the 3D model itself. When selecting desired rooms, the application provides
+                        information about the type of flooring, installation date, and maintenance history, including
+                        the last sanding of parquet or floor replacement. This allows you to quickly and easily access
+                        all the necessary floor information, facilitating maintenance planning and room management.</p>
+                    <p class="hometext">With this functionality, floor maintenance can be precisely planned, and timely
+                        responses to renovation or repair needs can be made, resulting in extended floor covering life
+                        and reduced maintenance costs.</p>
+
+                    <div class="visit-now">
+                        <button type="button" class="visit-dugme"><span>VISIT NOW</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- galerija slika -->
+    <section id="galerija" class="galerija light">
+        <div class="container-lg">
+            <div class="content">
+                <h2 class="hometext">GALLERY</h2>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">1 / 7</div>
+                        <img class="slide-image" src="./images/Senzor-Temp-Tabla2.png"
+                            alt="Temperature and Humidity Sensor in the classroom">
+                        <div class="caption">Temperature and humidity sensor in the classroom</div>
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">2 / 7</div>
+                        <img class="slide-image" src="./images/Senzor-Temp-Tabla3.png"
+                            alt="Temperature and Humidity Sensor in the classroom">
+                        <div class="caption">Temperature and humidity sensor in the classroom</div>
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">3 / 7</div>
+                        <img class="slide-image" src="./images/Hodnik_kancelarije.png"
+                            alt="Temperature and Humidity Sensor in the hallway">
+                        <div class="caption">Temperature and humidity sensor in the hallway</div>
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">4 / 7</div>
+                        <img class="slide-image" src="./images/Door-Sensor_Prozori2.png" alt="Window and Door Sensor">
+                        <div class="caption">Window and door sensor</div>
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">5 / 7</div>
+                        <img class="slide-image" src="./images/Door-Sensor_Prozori-Hodnik.png"
+                            alt="Window and Door Sensor in the hallway">
+                        <div class="caption">Window and door sensor in the hallway</div>
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">6 / 7</div>
+                        <img class="slide-image" src="./images/Motion-Sensor-4.png" alt="Motion Sensor in classroom">
+                        <div class="caption">Motion sensor in classroom</div>
+                    </div>
+                    <div class="mySlides fade-anim">
+                        <div class="numbertext">7 / 7</div>
+                        <img class="slide-image" src="./images/Senzor-Temp-kancelarija.png"
+                            alt="Temperature Sensor in office">
+                        <div class="caption">Temperature sensor in office</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us-tab" class="about-us dark">
+        <div class="container-lg">
+            <div class="banner-content">
+                <h2 class="hometext">More about us</h2>
+                <div>
+                    <h4 class="hometext">About school</h4>
+                    <p class="hometext">The Technical School "Pavle Savić" in Novi Sad was founded on July 25, 1961, as
+                        a Chemical-Technological School. Starting with just two departments, it began its work in the
+                        building of the United Milling Industry. Today, the school educates students in three areas:
+                        chemistry, non-metals and graphics; personal services; agriculture, food production, and
+                        processing, with 17 educational profiles and 1199 students.
+                        <a target="_blank" href="https://tspavlesavic.edu.rs/">Link to school website</a>
+                    </p>
+                </div>
+                <hr class="hor-line light-background">
+                <div>
+                    <h4 class="hometext">About TeamCAD</h4>
+                    <p class="hometext">TeamCAD is engaged in the sale, implementation, consulting, and development of
+                        software. With 19 years of experience and 3500 active clients, it is the leading Autodesk
+                        partner in the Western Balkans region with numerous Autodesk statuses. TeamCAD holds several
+                        Autodesk specializations and organizes training for CAD courses and workshops according to
+                        Autodesk standards.
+                        <a target="_blank" href="https://teamcad.rs/index.php/srb/">Link to company website</a>
+                    </p>
+                </div>
+                <hr class="hor-line light-background">
+                <div>
+                    <h4 class="hometext">About Pavle Savic</h4>
+                    <p class="hometext">Pavle Savić (Thessaloniki, January 10, 1909 - Belgrade, May 30, 1994) was a
+                        Serbian physicist and chemist, known for his collaboration with Irène Joliot-Curie in Paris,
+                        where they discovered isotopes of known elements by bombarding uranium atoms with slow neutrons.
+                        He was also the director of the construction of the Vinča Nuclear Institute, and later the
+                        founder of the Vinča Institute and its director.
+                        <a target="_blank"
+                            href="https://sr.wikipedia.org/sr-el/%D0%9F%D0%B0%D0%B2%D0%BB%D0%B5_%D0%A1%D0%B0%D0%B2%D0%B8%D1%9B">
+                            Link to wiki page</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us-tab" class="contact-us dark">
+        <div class="container-lg">
+            <div class="content">
+                <h1 class="hometext">Order your project today.</h1>
+
+                <div class="banner-content">
+                    <div class="contact-info">
+                        <h4 class="hometext">Phone</h4>
+                        <p class="hometext">+381 11 301 5043</p>
+                    </div>
+
+                    <hr class="hor-line dark-background">
+
+                    <div class="contact-info">
+                        <h4 class="hometext">Email</h4>
+                        <p class="hometext"><a href="mailto:services@teamcad.rs">services@teamcad.rs</a></p>
+                    </div>
+
+                    <hr class="hor-line dark-background">
+
+                    <div class="contact-info">
+                        <h4 class="hometext">Website</h4>
+                        <p class="hometext"><a target="_blank" href="https://www.bim-dt.com/">bim-dt.com</a></p>
+                        <p class="hometext"><a target="_blank" href="https://teamcad.rs/">teamcad.rs</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Image Viewer -->
+    <div id="img-viewer">
+        <span class="close" onclick="close_model()">&times;</span>
+        <img class="modal-content" id="full-image">
+    </div>
+
+
+</body>
+
+</html>
