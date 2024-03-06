@@ -610,7 +610,7 @@ hr.light-background {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
 
     .home {
         padding: 80px 60px 30px 60px;
@@ -638,7 +638,7 @@ hr.light-background {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
 
     .home {
         padding: 100px 60px 60px 60px;
@@ -796,5 +796,3 @@ hr.light-background {
         gap: 5px;
     }
 }
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
